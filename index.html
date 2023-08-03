@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SkyWay</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<div id=line__container>
+<div class="pure-g">
+
+
+    <!-- Get local audio/video stream -->
+
+
+    <!-- Make calls to others -->
+    <div id="step1">
+        <p>あなたの番号: <span id="my-id">...</span></p>
+      <form id="make-call" class="pure-form">
+        <input type="text" placeholder="部屋のID..." id="join-room" value=雑談部屋>
+        <button class="pure-button pure-button-success" type="submit">入る</button>
+      </form>
+    </div>
+
+    <!-- Call in progress -->
+    <div id="step3">
+      <p>部屋名：<span id="room-id">...</span></p>
+      <p><input type="button" value="会話を終了します" onclick="window.location.reload();" /></p>
+
+      <!-- テキスト入力 -->
+      <form id="sendtextform" class="pure-form">
+        <input id="mymessage" type="text" placeholder="メッセージを入力してください">
+        <button class="pure-button pure-button-primary" type="submit">送信</button>
+      </form>
+
+      <!-- チャット -->
+      <div id="chatframe"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Chat area -->
+
+
+</div>
+</div>
+
+</body>
+</html>
