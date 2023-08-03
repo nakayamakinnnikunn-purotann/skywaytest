@@ -25,7 +25,7 @@ $(function() {
   $('#make-call').on('submit', e => {
     e.preventDefault();
     // Initiate a call!
-    const roomName = $('雑談部屋').val();
+    const roomName = "雑談部屋";
     if (!roomName) {
       return;
     }
